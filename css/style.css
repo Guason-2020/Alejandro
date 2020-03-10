@@ -16,6 +16,7 @@ html {
     float: left;
     margin:0rem 3rem;
 }
+a{color: #FFF; text-decoration: none;}
 a:hover{
     text-shadow: #000 5px 5px 5px;
 }
@@ -26,7 +27,7 @@ a:hover{
     background-color: #3282b8;
 }
 .verde{
-    background-color: #a7d129;
+    background-color: #c9f545;
 }
 .rojo{
     background-color: #fc4646;
@@ -67,8 +68,17 @@ footer{
 .med{
     flex-basis: 50%;
 }
+.nav-boton{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
 @media(max-width: 600px)
 {
+    .nav-boton{
+        display: inline-block;
+    }
     .navbar{
         flex-direction: column;
     }
@@ -76,4 +86,7 @@ footer{
         flex-direction: column;
     }
     footer{flex-direction: column-reverse;}
+    .desaparece{
+    display: none;
+    }
 }
